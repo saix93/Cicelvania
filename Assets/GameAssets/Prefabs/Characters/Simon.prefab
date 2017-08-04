@@ -193,7 +193,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1451170313963722}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.07, y: -0.96, z: 0}
+  m_LocalPosition: {x: -25.09, y: -1.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4179511265743426}
@@ -308,7 +308,7 @@ MonoBehaviour:
   _chestTransform: {fileID: 4179511265743426}
   _items: []
   ALL_WEAPONS: 1
-  GOD_MODE: 0
+  GOD_MODE: 1
   _runSpeedMultiplier: 2
   _invincibilityShield: {fileID: 1739769006833492}
 --- !u!114 &114138053003431246

@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 2d0abfd6702ee1d4581d949eae5109c9
-timeCreated: 1498207533
-licenseType: Pro
+timeCreated: 1501841362
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: basictileset1_1_0
@@ -101,6 +101,9 @@ TextureImporter:
     21300188: brick_wall
     21300190: brick_ceiling
     21300192: brick_corridor
+    21300194: basictileset1_1_19
+    21300196: basictileset1_1_25
+    21300198: basictileset1_1_59
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -109,6 +112,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -124,10 +129,13 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: -1
     mipBias: -1
-    wrapMode: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -215,6 +223,7 @@ TextureImporter:
         - {x: -13, y: -25}
         - {x: 25, y: -25}
         - {x: 25, y: 25}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_1
@@ -247,6 +256,7 @@ TextureImporter:
         - {x: 26.5, y: -5.5}
         - {x: 42.5, y: 5.5}
         - {x: 42.5, y: 9.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_2
@@ -264,6 +274,7 @@ TextureImporter:
         - {x: -4, y: -5.5}
         - {x: 4, y: -5.5}
         - {x: 4, y: 5.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_3
@@ -281,6 +292,7 @@ TextureImporter:
         - {x: -4.5, y: -5.5}
         - {x: 4.5, y: -5.5}
         - {x: 4.5, y: 5.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_4
@@ -300,6 +312,7 @@ TextureImporter:
         - {x: 4.5, y: -3.5}
         - {x: 4.5, y: 4.5}
         - {x: 3.5, y: 5.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_5
@@ -318,6 +331,7 @@ TextureImporter:
         - {x: -4.5, y: -5.5}
         - {x: 4.5, y: -5.5}
         - {x: 4.5, y: 5.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_6
@@ -336,6 +350,7 @@ TextureImporter:
         - {x: 3, y: -5.5}
         - {x: 4, y: -4.5}
         - {x: 4, y: 5.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_7
@@ -355,6 +370,7 @@ TextureImporter:
         - {x: 3.5, y: -5.5}
         - {x: 4.5, y: -4.5}
         - {x: 4.5, y: 5.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_8
@@ -372,6 +388,7 @@ TextureImporter:
         - {x: -4, y: -5.5}
         - {x: 4, y: -5.5}
         - {x: 4, y: 5.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_9
@@ -393,6 +410,7 @@ TextureImporter:
         - {x: 4.5, y: -4.5}
         - {x: 4.5, y: 4.5}
         - {x: 3.5, y: 5.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_10
@@ -411,6 +429,7 @@ TextureImporter:
         - {x: 2.5, y: -5.5}
         - {x: 4.5, y: -3.5}
         - {x: 4.5, y: 5.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_11
@@ -430,6 +449,7 @@ TextureImporter:
         - {x: 3.5, y: -5.5}
         - {x: 4.5, y: -4.5}
         - {x: 4.5, y: 5.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_12
@@ -447,6 +467,7 @@ TextureImporter:
         - {x: -2, y: -4}
         - {x: 2, y: -4}
         - {x: 2, y: 4}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_13
@@ -464,6 +485,7 @@ TextureImporter:
         - {x: -4, y: -4}
         - {x: 4, y: -4}
         - {x: 4, y: 4}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_14
@@ -485,6 +507,7 @@ TextureImporter:
         - {x: 8, y: -6}
         - {x: 8, y: 6}
         - {x: 3, y: 13}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_15
@@ -505,6 +528,7 @@ TextureImporter:
         - {x: 9, y: -13}
         - {x: 9, y: 8}
         - {x: 4, y: 13}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_16
@@ -522,6 +546,7 @@ TextureImporter:
         - {x: -3, y: -6}
         - {x: 3, y: -6}
         - {x: 3, y: 6}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_17
@@ -540,6 +565,7 @@ TextureImporter:
         - {x: -4, y: -6.5}
         - {x: 4, y: -6.5}
         - {x: 4, y: 6.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_18
@@ -557,6 +583,7 @@ TextureImporter:
         - {x: -5, y: -7.5}
         - {x: 5, y: -7.5}
         - {x: 5, y: 7.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_4-4
@@ -574,6 +601,7 @@ TextureImporter:
         - {x: -24, y: -24}
         - {x: 24, y: -24}
         - {x: 24, y: 24}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_20
@@ -591,6 +619,7 @@ TextureImporter:
         - {x: -48, y: -64}
         - {x: 48, y: -64}
         - {x: 48, y: 64}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_21
@@ -608,6 +637,7 @@ TextureImporter:
         - {x: -4, y: -4}
         - {x: 4, y: -4}
         - {x: 4, y: 4}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_22
@@ -625,6 +655,7 @@ TextureImporter:
         - {x: -3, y: -6}
         - {x: 3, y: -6}
         - {x: 3, y: 6}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_23
@@ -643,6 +674,7 @@ TextureImporter:
         - {x: -4, y: -6.5}
         - {x: 4, y: -6.5}
         - {x: 4, y: 6.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_24
@@ -660,6 +692,7 @@ TextureImporter:
         - {x: -5, y: -7.5}
         - {x: 5, y: -7.5}
         - {x: 5, y: 7.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: brick
@@ -677,6 +710,7 @@ TextureImporter:
         - {x: -34.5, y: -17}
         - {x: 34.5, y: -17}
         - {x: 34.5, y: 17}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_26
@@ -695,6 +729,7 @@ TextureImporter:
         - {x: -4, y: -6.5}
         - {x: 4, y: -6.5}
         - {x: 4, y: 6.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_27
@@ -766,6 +801,7 @@ TextureImporter:
         - {x: 90, y: -3.5}
         - {x: 87, y: -6.5}
         - {x: 88, y: -6.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_1-1
@@ -783,6 +819,7 @@ TextureImporter:
         - {x: -16, y: -14.5}
         - {x: 16, y: -14.5}
         - {x: 16, y: 14.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_29
@@ -802,6 +839,7 @@ TextureImporter:
         - {x: 28, y: -7.5}
         - {x: 32, y: -5.5}
         - {x: 32, y: 7.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_30
@@ -820,6 +858,7 @@ TextureImporter:
         - {x: 30, y: -7.5}
         - {x: 32, y: -1.5}
         - {x: 32, y: 7.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_31
@@ -882,6 +921,7 @@ TextureImporter:
         - {x: 90, y: -3.5}
         - {x: 87, y: -6.5}
         - {x: 88, y: -6.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_32
@@ -901,6 +941,7 @@ TextureImporter:
         - {x: -72.5, y: -72}
         - {x: 72.5, y: -72}
         - {x: 72.5, y: 42}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_33
@@ -922,6 +963,7 @@ TextureImporter:
         - {x: 7.5, y: -27.5}
         - {x: 17.5, y: -6.5}
         - {x: 17.5, y: 27.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_34
@@ -943,6 +985,7 @@ TextureImporter:
         - {x: 6, y: -19}
         - {x: 6, y: -4.8877563}
         - {x: 5, y: 1}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_35
@@ -967,6 +1010,7 @@ TextureImporter:
         - {x: 5, y: -21}
         - {x: 5, y: 18}
         - {x: 2, y: 21}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_36
@@ -986,6 +1030,7 @@ TextureImporter:
         - {x: 1, y: -20}
         - {x: 4, y: -1}
         - {x: 4, y: 20}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_37
@@ -1004,6 +1049,7 @@ TextureImporter:
         - {x: 23.5, y: -13.5}
         - {x: 23.5, y: 1.5}
         - {x: 15.5, y: 13.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_38
@@ -1023,6 +1069,7 @@ TextureImporter:
         - {x: 23.5, y: -13.5}
         - {x: 23.5, y: 1.5}
         - {x: 20.5, y: 9.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_39
@@ -1042,6 +1089,7 @@ TextureImporter:
         - {x: 21.5, y: -7}
         - {x: 21.5, y: -2}
         - {x: 8.5, y: 7}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_40
@@ -1065,6 +1113,7 @@ TextureImporter:
       - - {x: 6, y: 4}
         - {x: 6, y: 5}
         - {x: 2, y: 5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_41
@@ -1082,6 +1131,7 @@ TextureImporter:
         - {x: -13, y: -3}
         - {x: 13, y: -3}
         - {x: 13, y: 3}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_42
@@ -1103,6 +1153,7 @@ TextureImporter:
         - {x: 24.5, y: -7}
         - {x: 24.5, y: 4}
         - {x: 13.5, y: 9}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_43
@@ -1120,6 +1171,7 @@ TextureImporter:
         - {x: -13, y: -3}
         - {x: 13, y: -3}
         - {x: 13, y: 3}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_46
@@ -1151,6 +1203,7 @@ TextureImporter:
         - {x: 43, y: -31}
         - {x: 43, y: -17}
         - {x: 35, y: -16}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_47
@@ -1176,6 +1229,7 @@ TextureImporter:
         - {x: 49, y: -11.5}
         - {x: 49, y: 30.5}
         - {x: -13, y: 51.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_48
@@ -1194,6 +1248,7 @@ TextureImporter:
         - {x: 20, y: -66.5}
         - {x: 28, y: -53.5}
         - {x: 28, y: 66.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_49
@@ -1235,6 +1290,7 @@ TextureImporter:
         - {x: -8, y: 21.5}
         - {x: -1, y: 14.5}
         - {x: -1, y: 15.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_50
@@ -1255,6 +1311,7 @@ TextureImporter:
         - {x: 40.5, y: 5}
         - {x: 43.5, y: 10}
         - {x: 43.5, y: 24}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_51
@@ -1285,6 +1342,7 @@ TextureImporter:
         - {x: 23, y: -63}
         - {x: 43, y: -37}
         - {x: 43, y: 24}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_52
@@ -1313,6 +1371,7 @@ TextureImporter:
         - {x: 36, y: -16.5}
         - {x: 34, y: -8.5}
         - {x: 49, y: -0.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_53
@@ -1335,6 +1394,7 @@ TextureImporter:
         - {x: -26, y: -66.5}
         - {x: 19, y: -66.5}
         - {x: 28, y: -23.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_54
@@ -1374,6 +1434,7 @@ TextureImporter:
         - {x: -8, y: 21.5}
         - {x: -1, y: 14.5}
         - {x: -1, y: 15.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_55
@@ -1391,6 +1452,7 @@ TextureImporter:
         - {x: -72, y: -56}
         - {x: 72, y: -56}
         - {x: 72, y: 56}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_1-2
@@ -1408,6 +1470,7 @@ TextureImporter:
         - {x: -16, y: -14.5}
         - {x: 16, y: -14.5}
         - {x: 16, y: 14.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_1-3
@@ -1425,6 +1488,7 @@ TextureImporter:
         - {x: -16, y: -14.5}
         - {x: 16, y: -14.5}
         - {x: 16, y: 14.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_1-4
@@ -1442,6 +1506,7 @@ TextureImporter:
         - {x: -16, y: -14.5}
         - {x: 16, y: -14.5}
         - {x: 16, y: 14.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_4-3
@@ -1459,6 +1524,7 @@ TextureImporter:
         - {x: -24, y: -24}
         - {x: 24, y: -24}
         - {x: 24, y: 24}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_4-2
@@ -1476,6 +1542,7 @@ TextureImporter:
         - {x: -24, y: -24}
         - {x: 24, y: -24}
         - {x: 24, y: 24}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_4-1
@@ -1493,6 +1560,7 @@ TextureImporter:
         - {x: -24, y: -24}
         - {x: 24, y: -24}
         - {x: 24, y: 24}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_3-1
@@ -1510,6 +1578,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_3-2
@@ -1527,6 +1596,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_3-3
@@ -1544,6 +1614,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_3-4
@@ -1561,6 +1632,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_67
@@ -1578,6 +1650,7 @@ TextureImporter:
         - {x: -40, y: -56}
         - {x: 40, y: -56}
         - {x: 40, y: 56}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_68
@@ -1595,6 +1668,7 @@ TextureImporter:
         - {x: -64, y: -16}
         - {x: 64, y: -16}
         - {x: 64, y: 16}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_69
@@ -1612,6 +1686,7 @@ TextureImporter:
         - {x: -88, y: -23.5}
         - {x: 88, y: -23.5}
         - {x: 88, y: 23.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_70
@@ -1629,6 +1704,7 @@ TextureImporter:
         - {x: -48, y: -23.5}
         - {x: 48, y: -23.5}
         - {x: 48, y: 23.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_71
@@ -1647,6 +1723,7 @@ TextureImporter:
         - {x: -134.5, y: -48.5}
         - {x: 134.5, y: -48.5}
         - {x: 134.5, y: 48.5}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_72
@@ -1664,6 +1741,7 @@ TextureImporter:
         - {x: -38.5, y: -48}
         - {x: 38.5, y: -48}
         - {x: 38.5, y: 48}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_73
@@ -1681,6 +1759,7 @@ TextureImporter:
         - {x: -22, y: -32}
         - {x: 22, y: -32}
         - {x: 22, y: 32}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_74
@@ -1698,6 +1777,7 @@ TextureImporter:
         - {x: -22, y: -32}
         - {x: 22, y: -32}
         - {x: 22, y: 32}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_75
@@ -1717,6 +1797,7 @@ TextureImporter:
         - {x: -7.5, y: -48}
         - {x: 7.5, y: -48}
         - {x: 7.5, y: 0}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_76
@@ -1734,6 +1815,7 @@ TextureImporter:
         - {x: -32, y: -32}
         - {x: 32, y: -32}
         - {x: 32, y: 32}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_77
@@ -1751,6 +1833,7 @@ TextureImporter:
         - {x: -32, y: -24}
         - {x: 32, y: -24}
         - {x: 32, y: 24}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_78
@@ -1770,6 +1853,7 @@ TextureImporter:
         - {x: 48, y: -72}
         - {x: 48, y: 43}
         - {x: 34, y: 72}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_2-1
@@ -1787,6 +1871,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_2-2
@@ -1804,6 +1889,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_2-3
@@ -1821,6 +1907,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: torch_2-4
@@ -1838,6 +1925,7 @@ TextureImporter:
         - {x: -16, y: -16}
         - {x: 16, y: -16}
         - {x: 16, y: 16}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_83
@@ -1857,6 +1945,7 @@ TextureImporter:
         - {x: 112, y: -88}
         - {x: 112, y: 49}
         - {x: 79, y: 88}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_28
@@ -1876,6 +1965,7 @@ TextureImporter:
         - {x: 63.5, y: -72}
         - {x: 63.5, y: 58}
         - {x: 50.5, y: 72}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_44
@@ -1894,6 +1984,7 @@ TextureImporter:
         - {x: -64.5, y: -72}
         - {x: 64.5, y: -72}
         - {x: 64.5, y: 72}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_45
@@ -1911,6 +2002,7 @@ TextureImporter:
         - {x: -40, y: -24}
         - {x: 40, y: -24}
         - {x: 40, y: 24}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_56
@@ -1928,6 +2020,7 @@ TextureImporter:
         - {x: -2, y: -4}
         - {x: 2, y: -4}
         - {x: 2, y: 4}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_57
@@ -1945,6 +2038,7 @@ TextureImporter:
         - {x: -2, y: -4}
         - {x: 2, y: -4}
         - {x: 2, y: 4}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_58
@@ -1962,6 +2056,7 @@ TextureImporter:
         - {x: -4, y: -4}
         - {x: 4, y: -4}
         - {x: 4, y: 4}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_79
@@ -1979,6 +2074,7 @@ TextureImporter:
         - {x: -4, y: -4}
         - {x: 4, y: -4}
         - {x: 4, y: 4}
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_80
@@ -1992,6 +2088,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: black
@@ -2005,6 +2102,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_81
@@ -2018,6 +2116,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_66
@@ -2031,6 +2130,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: basictileset1_1_82
@@ -2044,6 +2144,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: brick_floor
@@ -2057,6 +2158,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: brick_wall
@@ -2070,6 +2172,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: brick_ceiling
@@ -2083,6 +2186,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: brick_corridor
@@ -2093,11 +2197,55 @@ TextureImporter:
         width: 64
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: basictileset1_1_19
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 416
+        width: 60
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: basictileset1_1_25
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 416
+        width: 264
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: basictileset1_1_59
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 416
+        width: 40
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
       tessellationDetail: 0
     outline: []
+    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

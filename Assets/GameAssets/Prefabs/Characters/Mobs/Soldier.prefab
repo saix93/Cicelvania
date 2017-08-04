@@ -136,7 +136,10 @@ MonoBehaviour:
   _attackRate: 0
   _attackTransform: {fileID: 0}
   _chestTransform: {fileID: 0}
-  _items: []
+  _items:
+  - {fileID: 114640610976534814, guid: 5b796313a5e523742822120738885b9a, type: 2}
+  - {fileID: 114369668233755020, guid: e2800df35d8992942ae1fdb83e89296c, type: 2}
+  - {fileID: 114481992193656942, guid: ea5b304281de1664f9dccea7ccb83883, type: 2}
   _distanceLeft: 5
   _distanceRight: 5
 --- !u!212 &212881297759569826
@@ -168,8 +171,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2078058441
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300022, guid: 636ba1340540c724b83547894f94f4b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

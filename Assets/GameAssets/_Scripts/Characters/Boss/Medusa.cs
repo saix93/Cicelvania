@@ -20,6 +20,8 @@ public class Medusa : BaseCharacter
     private int _timeToChangePhase;
     [SerializeField]
     private int _timeToShootRay;
+    [SerializeField]
+    private int _damageToSelfWithMirror;
 
     [Header("References")]
     [SerializeField]
@@ -55,7 +57,7 @@ public class Medusa : BaseCharacter
     {
         _lastLife = GetHealth().GetCurrentLife();
         _nextInvincibilityTime = Time.time + _timeForNextInvincibility;
-        _currentPhase = EBossPhases.Ray;
+        _currentPhase = EBossPhases.Teleport;
         _nextPhaseChange = Time.time + _timeToChangePhase;
         _nextRayAttack = Time.time + _timeToShootRay;
         _originalPosition = this.transform.position;
@@ -75,7 +77,7 @@ public class Medusa : BaseCharacter
     {
         Health health = collision.transform.GetComponent<Health>();
 
-        if (health)
+        if (_currentPhase.Equals(EBossPhases.Pursue) && health)
         {
             health.ReduceLife(999, Health.EDamageTypes.None);
         }
@@ -139,6 +141,11 @@ public class Medusa : BaseCharacter
         _currentPhase = (EBossPhases)phaseIndex;
         _nextPhaseChange = Time.time + _timeToChangePhase;
         _nextRayAttack = Time.time + _timeToShootRay;
+
+        Quaternion qu = this.transform.rotation;
+        qu.eulerAngles = Vector3.zero;
+        this.transform.rotation = qu;
+
         GetRigidbody().velocity = Vector3.zero;
     }
 
@@ -177,6 +184,9 @@ public class Medusa : BaseCharacter
         Vector3 direction = (_aimPoint.position - this.transform.position).normalized;
         Debug.DrawRay(this.transform.position, direction, Color.red, .1f);
 
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        this.transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+
         yield return new WaitForSeconds(2);
 
         if (!_currentPhase.Equals(EBossPhases.Ray)) yield return null;
@@ -208,7 +218,7 @@ public class Medusa : BaseCharacter
                     backRay.SetDirection((this.transform.position - (Vector3)hit.point).normalized);
                     backRay.SetDistance(distance);
 
-                    GetHealth().ReduceLife(1, Health.EDamageTypes.None);
+                    GetHealth().ReduceLife(_damageToSelfWithMirror, Health.EDamageTypes.None);
                 }
 
                 break;

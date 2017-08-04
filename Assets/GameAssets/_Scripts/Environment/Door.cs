@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
 {
+    [Header("Door")]
     [SerializeField]
     private int _id;
     [SerializeField][Range(1,6)]
     private int _connectedLevel = 1;
+    [SerializeField]
+    private bool _isClosed;
 
     private Animator _anim;
     private Simon _simon;
@@ -18,8 +21,18 @@ public class Door : MonoBehaviour
         _anim = this.GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        if (_isClosed)
+        {
+            _anim.SetBool("IsClosed", true);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (_isClosed) return;
+
         Simon simon = collision.GetComponent<Simon>();
         _simon = simon;
 
@@ -38,6 +51,8 @@ public class Door : MonoBehaviour
     private IEnumerator OpenDoor()
     {
         _anim.SetTrigger("OpenDoor");
+
+        StopSimon();
 
         yield return new WaitForSeconds(2);
 

@@ -152,6 +152,7 @@ MonoBehaviour:
   _invincibilityDurationTime: 5
   _timeToChangePhase: 10
   _timeToShootRay: 1
+  _damageToSelfWithMirror: 4
   _teleportLocations:
   - {x: -16.84, y: 2.36, z: 0}
   - {x: -6.7, y: 5.61, z: 0}

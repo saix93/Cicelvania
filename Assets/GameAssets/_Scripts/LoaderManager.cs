@@ -10,10 +10,11 @@ public class LoaderManager : MonoBehaviour
     private static int[] _powerupsLoader;
     private static int _money;
     private static bool _mustLoad;
+    private static string _sceneName;
 
     private void Start()
     {
-        if (!_mustLoad) return;
+        if (!_mustLoad || !SceneManager.GetActiveScene().name.Equals(_sceneName)) return;
 
         Simon simon = GameManager.GetInstance().GetSimon();
         Inventory inventory = simon.GetInventory();
@@ -40,9 +41,10 @@ public class LoaderManager : MonoBehaviour
         _weaponsLoader = weapons;
         _powerupsLoader = powerups;
         _money = money;
+        _sceneName = sceneName;
 
         _mustLoad = true;
 
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        SceneManager.LoadScene(_sceneName, LoadSceneMode.Single);
     }
 }

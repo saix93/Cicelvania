@@ -99,23 +99,23 @@ MonoBehaviour:
   sellerName: Draculin
   _items:
   - Name: Whip
-    Value: 10
+    Value: 5
     Icon: {fileID: 21300030, guid: d0b9af534c733b6439d8a4fe4d807e35, type: 3}
     Owned: 1
   - Name: Dagger
-    Value: 5
+    Value: 120
     Icon: {fileID: 21300006, guid: d0b9af534c733b6439d8a4fe4d807e35, type: 3}
     Owned: 0
   - Name: Axe
-    Value: 10
+    Value: 120
     Icon: {fileID: 21300008, guid: d0b9af534c733b6439d8a4fe4d807e35, type: 3}
     Owned: 0
   - Name: Boomerang
-    Value: 15
+    Value: 200
     Icon: {fileID: 21300012, guid: d0b9af534c733b6439d8a4fe4d807e35, type: 3}
     Owned: 0
   - Name: Ball
-    Value: 20
+    Value: 300
     Icon: {fileID: 21300024, guid: d0b9af534c733b6439d8a4fe4d807e35, type: 3}
     Owned: 0
 --- !u!212 &212076464321840538

@@ -59,7 +59,7 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
-        if (_invincibilityTime <= Time.time)
+        if (this.GetComponent<Simon>() && _invincibilityTime <= Time.time)
         {
             GameManager.GetInstance().GetSimon().SetInvincibilityShield(false);
         }
@@ -118,10 +118,12 @@ public class Health : MonoBehaviour
         if (_character.GetType() == typeof(Simon))
         {
             GameManager.GetInstance().GetHud().UpdatePlayerLife(_currentLife);
+            GameManager.GetInstance().AudioRandomSimonHit().Play();
         }
         else
         {
             GameManager.GetInstance().GetHud().UpdateEnemyLife(_currentLife);
+            GameManager.GetInstance().AudioRandomEnemyHit().Play();
         }
 
         float resistanceText = _resistances.ContainsKey(damageType) ? _resistances[damageType] : 0;

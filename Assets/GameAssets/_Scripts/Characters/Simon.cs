@@ -101,8 +101,15 @@ public class Simon : BaseCharacter
     {
         base.Awake();
 
-        _inventory = new Inventory();
-        _inventory.Initialize();
+        if (GameManager.GetInventory() != null)
+        {
+            _inventory = GameManager.GetInventory();
+        }
+        else
+        {
+            _inventory = new Inventory();
+            _inventory.Initialize();
+        }
 
         _canvas = this.transform.Find("Canvas").gameObject;
 

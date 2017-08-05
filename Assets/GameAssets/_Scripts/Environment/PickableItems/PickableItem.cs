@@ -30,6 +30,7 @@ public class PickableItem : MonoBehaviour
         Simon simon = collision.GetComponent<Simon>();
         if (simon)
         {
+            GameManager.GetInstance().AudioPickItem().Play();
             PickItem(simon);
         }
     }

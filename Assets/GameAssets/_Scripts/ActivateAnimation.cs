@@ -17,7 +17,7 @@ public class ActivateAnimation : MonoBehaviour
 
         if (simon)
         {
-            Invoke("ThrowAnim", 1);
+            Invoke("ThrowAnim", .5f);
         }
     }
 

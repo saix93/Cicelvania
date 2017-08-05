@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HUD : Window
 {
@@ -44,6 +45,12 @@ public class HUD : Window
         int remainTimeInt = (int)remainTimeFloat;
 
         remainTimeInt = Mathf.Clamp(remainTimeInt, 0, 9999);
+
+        if (remainTimeInt == 0)
+        {
+            SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
+            return;
+        }
 
         string timeToShow = "";
 

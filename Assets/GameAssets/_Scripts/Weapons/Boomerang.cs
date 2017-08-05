@@ -32,7 +32,7 @@ public class Boomerang : BaseWeapon
         Vector2 nextPosition = Vector2.zero;
         if (_goingBack)
         {
-            Vector2 direction = Vector3.Normalize(GameManager.GetInstance().GetSimon().transform.position - this.transform.position);
+            Vector2 direction = Vector3.Normalize(GameManager.GetInstance().GetSimon().GetAttackPosition() - this.transform.position);
             nextPosition = GetRigidbody().position + direction * _speedXMovement * Time.fixedDeltaTime;
         }
         else

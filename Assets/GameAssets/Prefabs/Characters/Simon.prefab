@@ -307,8 +307,8 @@ MonoBehaviour:
   _attackTransform: {fileID: 4213212921279944}
   _chestTransform: {fileID: 4179511265743426}
   _items: []
-  ALL_WEAPONS: 1
-  GOD_MODE: 1
+  ALL_WEAPONS: 0
+  GOD_MODE: 0
   _runSpeedMultiplier: 2
   _invincibilityShield: {fileID: 1739769006833492}
 --- !u!114 &114138053003431246

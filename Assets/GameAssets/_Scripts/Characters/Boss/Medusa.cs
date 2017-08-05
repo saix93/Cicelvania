@@ -175,17 +175,18 @@ public class Medusa : BaseCharacter
         if (!_shootingRay && Time.time > _nextRayAttack)
         {
             _shootingRay = true;
-            StartCoroutine(ShootRay());
+            StartCoroutine(ShootRayCoroutine());
         }
     }
 
-    private IEnumerator ShootRay()
+    private IEnumerator ShootRayCoroutine()
     {
         Vector3 direction = (_aimPoint.position - this.transform.position).normalized;
         Debug.DrawRay(this.transform.position, direction, Color.red, .1f);
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         this.transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+        GameManager.GetInstance().AudioMedusaBeamStart().Play();
 
         yield return new WaitForSeconds(2);
 
@@ -204,6 +205,7 @@ public class Medusa : BaseCharacter
 
                 ray.SetDirection(direction);
                 ray.SetDistance(distance);
+                GameManager.GetInstance().AudioMedusaBeam().Play();
 
                 if (hit.transform.CompareTag("Player"))
                 {
@@ -257,6 +259,7 @@ public class Medusa : BaseCharacter
         Debug.DrawRay(this.transform.position, direction * 50, Color.red, .5f);
 
         weapon.GetComponent<Rigidbody2D>().AddForce(direction * _weaponForce, ForceMode2D.Impulse);
+        GameManager.GetInstance().AudioMedusaSnakeThrow().Play();
     }
 
     public override void OnDead()

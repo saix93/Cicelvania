@@ -51,6 +51,13 @@ public class Map : MonoBehaviour
         path.SetLoops(-1, LoopType.Restart);
 
         path.Play();
+
+        Invoke("LoadLevel", 10);
+    }
+
+    private void LoadLevel()
+    {
+        SceneManager.LoadScene("Level" + (_toLevel + 1), LoadSceneMode.Single);
     }
 
     public static void ShowMap(int fromLevel, int toLevel)

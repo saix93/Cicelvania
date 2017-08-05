@@ -3956,7 +3956,7 @@ Prefab:
     - target: {fileID: 114054237067410688, guid: 2c6c05b66e45e604e8b1870123e3d314,
         type: 2}
       propertyPath: ALL_WEAPONS
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 70334011274626594, guid: 2c6c05b66e45e604e8b1870123e3d314,
         type: 2}

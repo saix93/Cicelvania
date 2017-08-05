@@ -38,6 +38,7 @@ public abstract class BaseWeapon : MonoBehaviour
 
         if (collision.CompareTag("Shield"))
         {
+            GameManager.GetInstance().AudioRandomShieldHit().Play();
             Destroy(this.gameObject);
             return;
         }

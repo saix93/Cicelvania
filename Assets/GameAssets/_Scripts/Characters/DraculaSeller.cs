@@ -29,6 +29,7 @@ public class DraculaSeller : MonoBehaviour
     {
         if (_isSimonAtRange && Input.GetKeyDown(KeyCode.E))
         {
+            CheckOwnedWeapons();
             StoreGUI.Initialize(sellerName, _simon, _items, OnSell);
         }
     }
@@ -56,6 +57,18 @@ public class DraculaSeller : MonoBehaviour
             simon.SetActiveCanvas(false);
 
             _animator.SetBool("IsSimonNear", _isSimonAtRange);
+        }
+    }
+
+    private void CheckOwnedWeapons()
+    {
+        for (int i = 0; i < _items.Length; i++)
+        {
+            BaseWeapon weapon = null;
+            if (_simon.GetInventory().GetWeapon((Inventory.EWeaponList)i, out weapon))
+            {
+                _items[i].Owned = true;
+            }
         }
     }
 

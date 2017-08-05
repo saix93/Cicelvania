@@ -52,12 +52,12 @@ public class Door : MonoBehaviour
     {
         _anim.SetTrigger("OpenDoor");
 
+        GameManager.GetInstance().AudioGateOpen().Play();
         StopSimon();
 
         yield return new WaitForSeconds(2);
 
-        SceneManager.LoadScene("Level" + _connectedLevel);
-
-        //TODO: Utilizar ID para colocar el personaje en una puerta concreta al iniciar el nivel
+        GameManager.SaveInventory(_simon.GetInventory());
+        Map.ShowMap(_connectedLevel - 2, _connectedLevel - 1);
     }
 }

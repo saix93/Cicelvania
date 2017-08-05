@@ -34,6 +34,7 @@ public class MedusaBossManager : MonoBehaviour
 
         if (simon)
         {
+            GameManager.GetInstance().AudioMedusaStart().Play();
             Camera.main.GetComponent<CameraFollow>().enabled = false;
             Camera.main.transform.position = _cameraPosition;
             Invoke("EnableMedusa", _timeToWaitUntilActivation);

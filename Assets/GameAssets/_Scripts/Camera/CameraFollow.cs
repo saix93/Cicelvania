@@ -79,11 +79,6 @@ public class CameraFollow : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        if (!UnityEditor.EditorApplication.isPlaying)
-        {
-            return;
-        }
-
         // Camera
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(_bottomLeft, .5f);

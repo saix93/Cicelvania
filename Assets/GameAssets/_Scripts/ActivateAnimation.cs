@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ActivateAnimation : MonoBehaviour
 {
+    [Header("Elevator")]
+    [SerializeField]
+    private GameObject _siblingCollider;
+
     private Animator _anim;
 
     private void Awake()
@@ -17,6 +21,7 @@ public class ActivateAnimation : MonoBehaviour
 
         if (simon)
         {
+            _siblingCollider.SetActive(true);
             Invoke("ThrowAnim", .5f);
         }
     }

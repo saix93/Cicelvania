@@ -102,7 +102,7 @@ MonoBehaviour:
   _lifeTime: 2
   _spriteWeapon: {fileID: 21300006, guid: d0b9af534c733b6439d8a4fe4d807e35, type: 3}
   _speedXMovement: 6
-  _damage: 4
+  _damage: 2
 --- !u!212 &212405977671881382
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -143,3 +143,5 @@ SpriteRenderer:
   m_Size: {x: 0.68, y: 0.36}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0

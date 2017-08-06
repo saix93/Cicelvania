@@ -87,6 +87,8 @@ public class Simon : BaseCharacter
     private float _runSpeedMultiplier = 2;
     [SerializeField]
     private GameObject _invincibilityShield;
+    [SerializeField]
+    private float _timeToChangeWeapon = .5f;
 
     private Inventory _inventory;
     private bool _canMove;
@@ -145,7 +147,7 @@ public class Simon : BaseCharacter
         {
             _isChangingWeapon = true;
 
-            yield return new WaitForSeconds(1.1f);
+            yield return new WaitForSeconds(_timeToChangeWeapon);
 
             _currentWeapon = weapon;
             _isChangingWeapon = false;

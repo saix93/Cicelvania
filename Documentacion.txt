@@ -1,0 +1,53 @@
+Nombre y apellidos del alumno:
+	Raúl Torres González
+
+Listado de requisitos implementados total o parcialmente:
+	- Menú principal
+	- Héroe
+	- Cámara con límites
+	- Elementos del nivel:
+		+ Plataformas
+		+ Áreas de daño
+		+ Objetos rompibles (Tanto en exterior como interior)
+	- Enemigos
+		+ Murciélago
+		+ Esqueleto (Lanza huesos sin moverse)
+		+ Soldado (Patrulla una zona, y si te toca, te mata)
+		+ Soldado con escudo (Igual que el soldado normal, pero porta un escudo, que hace que no se le pueda pegar desde delante)
+		+ Boss Medusa (Detallado más abajo)
+	- Power-ups:
+		Los enemigos y los objetos rompibles pueden soltar los siguientes power-ups:
+			+ Corazones de vida. Recuperan una cantidad de vida aleatoria entre 1 y 4
+			+ Bolsas de dinero. Dan una cantidad aleatoria de dinero entre 10 y 50
+			+ Poción de invencibilidad. Te da un escudo de invencibilidad durante 5 segundos
+	- Check-points y meta
+	- Game Over
+	- Audio
+	- Cambio de ambientación:
+		Se han utilizado sprites de distintas fuentes para intentar dar una ambientación acorde al videojuego
+	- Mecánicas de movimiento avanzadas:
+		+ Doble salto
+		+ Salto sobre pared
+	- Mecánicas de nivel avanzadas:
+		+ Carteles que indican pistas acerca del videojuego
+		+ Personaje (Drácula) que vende armas a cambio del oro que vas recogiendo por el juego
+	- Jefe final:
+		+ Medusa:
+			Este boss consta de tres fases que van intercambiandose de forma aleatoria cada X segundos:
+			- Fase teleport: 
+				Durante esta fase, Medusa se teletransporta por distintos puntos pre-definidos de la sala y lanza serpientes a Simon.
+			- Fase pursue:
+				En lo que dura esta fase, Medusa persigue al jugador tratando de tocarle. Si llega a alcanzarle, el jugador morirá de forma inmediata.
+			- Fase Ray:
+				Medusa se coloca en el centro de la sala y comienza a fijar al jugador para tirarle un rayo.
+				Si este rayo toca al jugador, el jugador morirá.
+				En la sala existen unos espejos capaces de reflejar el rayo de Medusa. (Quizá esto te ayude a derrotarla :))
+			- Durante el transcurso de estas fases, cada X tiempo, Medusa se pondrá a si misma un escudo de 5 segundos que el brindará invulnerabilidad.
+			  ¡Por lo que no te quedará otra que correr!
+
+Detalles más relevantes sobre la implementación (si los hubiese):
+	- Visualmente, el rayo de medusa está compuesto por tres sprites que se van auto-escalando en función de lo lejos que el rayo haya pegado.
+	  El código que se encarga de esto está en la clase: _Scripts/Characters/Boss/Ray.cs
+
+Dudas y mayores dificultades encontradas (si las hubiese):
+	- El escalado del rayo en función de la distancia.
